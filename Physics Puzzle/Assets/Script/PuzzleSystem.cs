@@ -17,7 +17,7 @@ public class PuzzleSystem : MonoBehaviour
 
     [SerializeField]private PuzzleMod mod;
 
-    private void Start()
+    private void Awake()
     {
         Current = this;
         mod = PuzzleMod.Hand;
@@ -48,8 +48,16 @@ public class PuzzleSystem : MonoBehaviour
         
     }
 
+    
+    
+    
     public PuzzleMod GetMod()
     {
         return mod;
+    }
+
+    public void StageClear()
+    {
+        Debug.Log("StageClear");
     }
 }

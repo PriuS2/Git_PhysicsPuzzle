@@ -6,9 +6,18 @@ using UnityEngine;
 public class Pin : MonoBehaviour
 {
     private Rigidbody2D _rigidbody2D;
+    
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        StartCoroutine(Test());
+    }
+
+
+    IEnumerator Test()
+    {
+        yield return new WaitForSeconds(.2f);
+        AttachPin();
     }
 
 

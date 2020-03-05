@@ -39,23 +39,20 @@ public class InputSystem : MonoBehaviour
             Debug.DrawLine(start, start + Vector3.up * 0.6f, Color.magenta, 0.016f, true);
         }
 
-
+        var mousePosition = Input.mousePosition;
         if (Input.GetMouseButtonDown(0))
         {
-            var mousePosition = Input.mousePosition;
-            var worldPos = mainCam.ScreenToWorldPoint(mousePosition);
-            var touchPos = new Vector2(worldPos.x, worldPos.y);
-            var ray = new Ray2D(touchPos, Vector2.zero);
-            var rayHit = Physics2D.Raycast(ray.origin, ray.direction);
+            
+            BeganTouch(mousePosition);
 
-            if (rayHit.collider)
-            {
-                if (rayHit.collider.gameObject.GetComponent<Block>())
-                {
-                    var block = rayHit.collider.gameObject.GetComponent<Block>();
-                    block.ClickBlock();
-                }
-            }
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            EndedTouch(mousePosition);
+        }
+        else if (Input.GetMouseButton(0))
+        {
+            MovedTouch(mousePosition);
         }
 
 #endif
@@ -96,21 +93,41 @@ public class InputSystem : MonoBehaviour
     //touch Fx
     private void BeganTouch(Vector3 touchPosition)
     {
-        //_cursor.position = new Vector3(touchPosition.x, touchPosition.y, -2);
-        //colorBlockManager.Attach(_cursor);
+
+        var worldPos = mainCam.ScreenToWorldPoint(touchPosition);
+        var touchPos = new Vector2(worldPos.x, worldPos.y);
+        var ray = new Ray2D(touchPos, Vector2.zero);
+        var rayHit = Physics2D.Raycast(ray.origin, ray.direction);
+        if (rayHit)
+        {
+            Debug.Log(rayHit.transform.name);
+            
+            if (rayHit.transform.CompareTag("Block"))
+            {
+                var block = rayHit.collider.gameObject.GetComponent<Block>();
+                block.ClickBlock();
+            }
+            else if (rayHit.transform.CompareTag("UI"))
+            {
+                var ui = rayHit.transform.GetComponent<PuzzleInterface>();
+            }
+        }
     }
 
     private void MovedTouch(Vector3 touchPosition)
     {
-        //_cursor.position = new Vector3(touchPosition.x, touchPosition.y, -2);
+        var worldPos = mainCam.ScreenToWorldPoint(touchPosition);
+        var touchPos = new Vector2(worldPos.x, worldPos.y);
     }
 
     private void StationaryTouch(Vector3 touchPosition)
     {
+        
     }
 
     private void EndedTouch(Vector3 touchPosition)
     {
-        //colorBlockManager.Detach(_cursor);
+        var worldPos = mainCam.ScreenToWorldPoint(touchPosition);
+        var touchPos = new Vector2(worldPos.x, worldPos.y);
     }
 }

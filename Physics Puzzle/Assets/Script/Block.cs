@@ -1,26 +1,36 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Block : MonoBehaviour
 {
     private Rigidbody2D _rigidbody2D;
     private FixedJoint2D _fixedJoint2D;
     private Pin _attachedPin;
-    // Start is called before the first frame update
-    void Start()
+    public Pin[] pins;
+    private Vector3 _initialPosition;
+    private Vector3 _initialRotation;
+
+    private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _fixedJoint2D = GetComponent<FixedJoint2D>();
-        _fixedJoint2D.enabled = false;
+        _rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
+        var temp = transform;
+        _initialPosition = temp.position;
+        _initialRotation = temp.rotation.eulerAngles;
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void Start()
     {
-        
+        if (GetComponent<FixedJoint2D>())
+        {
+            _fixedJoint2D = GetComponent<FixedJoint2D>();
+            _fixedJoint2D.enabled = false;
+        }
     }
-
 
     public void ClickBlock()
     {
@@ -37,6 +47,14 @@ public class Block : MonoBehaviour
     }
 
 
+    public void ResetBlock()
+    {
+        DetachPin();
+        _rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
+        var quaternion = Quaternion.Euler(_initialRotation);
+        transform.SetPositionAndRotation(_initialPosition, quaternion);
+    }
+
 
     public void AttachPin(Rigidbody2D rb2d, Pin pin)
     {
@@ -49,6 +67,7 @@ public class Block : MonoBehaviour
     {
         _fixedJoint2D.enabled = false;
         _attachedPin.DetachPin();
+        _attachedPin = null;
     }
     
     
@@ -64,5 +83,6 @@ public class Block : MonoBehaviour
     public void Unfreeze()
     {
         _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+        //_rigidbody2D.mass
     }
 }
