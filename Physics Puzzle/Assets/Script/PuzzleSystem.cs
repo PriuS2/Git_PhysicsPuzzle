@@ -8,6 +8,7 @@ public class PuzzleSystem : MonoBehaviour
 {
     public static PuzzleSystem Current;
     
+    
     public enum PuzzleMod
     {
         Hand,
@@ -16,7 +17,19 @@ public class PuzzleSystem : MonoBehaviour
     }
 
     [SerializeField]private PuzzleMod mod;
-
+    public PuzzleMod Mod
+    {
+        get => mod;
+        set => mod = value;
+    }
+    
+    
+    public PinBasket pinBasket;
+    
+    
+    
+    
+    
     private void Awake()
     {
         Current = this;
@@ -48,13 +61,13 @@ public class PuzzleSystem : MonoBehaviour
         
     }
 
-    
-    
-    
-    public PuzzleMod GetMod()
-    {
-        return mod;
-    }
+
+
+
+//    public PuzzleMod GetMod()
+//    {
+//        return mod;
+//    }
 
     public void StageClear()
     {

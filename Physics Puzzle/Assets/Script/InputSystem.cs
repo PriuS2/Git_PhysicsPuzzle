@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class InputSystem : MonoBehaviour
 {
     [Tooltip("if check show touch point")] public bool showTouchPoint;
 
-    private Camera mainCam;
+    private Camera _mainCam;
 
-    private Vector3 TouchPositon;
-
+    private Vector3 _touchPositon;
+    private PinBasket _pinBasket;
+    
 #if UNITY_EDITOR
     private int _screenWidth;
     private int _screenHeight;
@@ -17,7 +19,9 @@ public class InputSystem : MonoBehaviour
 
     void Start()
     {
-        mainCam = Camera.main;
+        _mainCam = Camera.main;
+        _pinBasket = PuzzleSystem.Current.pinBasket;
+        
 
 #if UNITY_EDITOR
         _screenWidth = Screen.width;
@@ -32,7 +36,7 @@ public class InputSystem : MonoBehaviour
         if (showTouchPoint)
         {
             var mousePositionDebug = Input.mousePosition;
-            var worldPosDebug = mainCam.ScreenToWorldPoint(mousePositionDebug);
+            var worldPosDebug = _mainCam.ScreenToWorldPoint(mousePositionDebug);
             var start = new Vector3(worldPosDebug.x - 0.3f, worldPosDebug.y, -.2f);
             Debug.DrawLine(start, start + Vector3.right * 0.6f, Color.magenta, 0.016f, true);
             start = new Vector3(worldPosDebug.x, worldPosDebug.y - 0.3f, -.2f);
@@ -63,26 +67,26 @@ public class InputSystem : MonoBehaviour
         {
             Touch touch = Input.GetTouch(0);
 
-            TouchPositon = mainCam.ScreenToWorldPoint(touch.position);
-            Debug.Log(TouchPositon);
+            _touchPositon = _mainCam.ScreenToWorldPoint(touch.position);
+            Debug.Log(_touchPositon);
 
             switch (touch.phase)
             {
                 case TouchPhase.Began:
                     //Debug.Log("Began Touch");
-                    BeganTouch(TouchPositon);
+                    BeganTouch(_touchPositon);
                     break;
                 case TouchPhase.Moved:
                     //Debug.Log("Moved Touch");
-                    MovedTouch(TouchPositon);
+                    MovedTouch(_touchPositon);
                     break;
                 case TouchPhase.Stationary:
                     //Debug.Log("Stationary Touch");
-                    StationaryTouch(TouchPositon);
+                    StationaryTouch(_touchPositon);
                     break;
                 case TouchPhase.Ended:
                     //Debug.Log("Ended Touch");
-                    EndedTouch(TouchPositon);
+                    EndedTouch(_touchPositon);
                     break;
             }
         }
@@ -94,7 +98,7 @@ public class InputSystem : MonoBehaviour
     private void BeganTouch(Vector3 touchPosition)
     {
 
-        var worldPos = mainCam.ScreenToWorldPoint(touchPosition);
+        var worldPos = _mainCam.ScreenToWorldPoint(touchPosition);
         var touchPos = new Vector2(worldPos.x, worldPos.y);
         var ray = new Ray2D(touchPos, Vector2.zero);
         var rayHit = Physics2D.Raycast(ray.origin, ray.direction);
@@ -109,25 +113,70 @@ public class InputSystem : MonoBehaviour
             }
             else if (rayHit.transform.CompareTag("UI"))
             {
-                var ui = rayHit.transform.GetComponent<PuzzleInterface>();
+                var ui = rayHit.transform.GetComponent<PuzzleInterface>().content;
+                if (ui == PuzzleInterface.UIContent.Pin)
+                {
+                    PuzzleSystem.Current.Mod = PuzzleSystem.PuzzleMod.Pin;
+                }
+                else if (ui == PuzzleInterface.UIContent.Eraser)
+                {
+                    PuzzleSystem.Current.Mod = PuzzleSystem.PuzzleMod.Eraser;
+                }
+                else if (ui == PuzzleInterface.UIContent.Undo)
+                {
+                }
+                else if (ui == PuzzleInterface.UIContent.Reset)
+                {
+                }
+                else if (ui == PuzzleInterface.UIContent.Back)
+                {
+                }
+                else
+                {
+                    PuzzleSystem.Current.Mod = PuzzleSystem.PuzzleMod.Hand;
+                }
             }
         }
     }
 
     private void MovedTouch(Vector3 touchPosition)
     {
-        var worldPos = mainCam.ScreenToWorldPoint(touchPosition);
+        if (PuzzleSystem.Current.Mod == PuzzleSystem.PuzzleMod.Hand) return;
+
+        var worldPos = _mainCam.ScreenToWorldPoint(touchPosition);
         var touchPos = new Vector2(worldPos.x, worldPos.y);
+        
+        if (PuzzleSystem.Current.Mod == PuzzleSystem.PuzzleMod.Pin)
+        {
+            _pinBasket.UpdateTemporaryPos(touchPos);
+        }
+        else if (PuzzleSystem.Current.Mod == PuzzleSystem.PuzzleMod.Eraser)
+        {
+            
+        }
+        
     }
 
     private void StationaryTouch(Vector3 touchPosition)
     {
-        
+        //if (_currentMod == PuzzleSystem.PuzzleMod.Hand) return;
     }
 
     private void EndedTouch(Vector3 touchPosition)
     {
-        var worldPos = mainCam.ScreenToWorldPoint(touchPosition);
+        if (PuzzleSystem.Current.Mod == PuzzleSystem.PuzzleMod.Hand) return;
+        
+        var worldPos = _mainCam.ScreenToWorldPoint(touchPosition);
         var touchPos = new Vector2(worldPos.x, worldPos.y);
+        
+        if (PuzzleSystem.Current.Mod == PuzzleSystem.PuzzleMod.Pin)
+        {
+            _pinBasket.TryAttachPin();
+        }
+        else if (PuzzleSystem.Current.Mod == PuzzleSystem.PuzzleMod.Eraser)
+        {
+            //
+        }
+        PuzzleSystem.Current.Mod = PuzzleSystem.PuzzleMod.Hand;
     }
 }

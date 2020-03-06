@@ -6,7 +6,7 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     private Vector3 _goalPosition;
-    
+    public GameObject clear;
     private void Start()
     {
         _goalPosition = transform.position;
@@ -19,8 +19,21 @@ public class Goal : MonoBehaviour
 
         if (distance < 0.5f)
         {
-            PuzzleSystem.Current.StageClear();
-            GetComponent<BoxCollider2D>().enabled = false;
+            var vel = other.GetComponent<Target>().Velocity;
+            Debug.Log(vel);
+            if (vel <= 0.01f)
+            {
+                PuzzleSystem.Current.StageClear();
+                GetComponent<BoxCollider2D>().enabled = false;
+                StartCoroutine(Temp());//임시
+            }
         }
+    }
+
+    //임시
+    IEnumerator Temp()
+    {
+        yield return new WaitForSeconds(1);
+        clear.SetActive(true);
     }
 }
