@@ -5665,7 +5665,7 @@ PrefabInstance:
     - target: {fileID: 1193462553348609188, guid: 6727e64bfa2341546be8a1cd3e52c79b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 1193462553348609188, guid: 6727e64bfa2341546be8a1cd3e52c79b,
         type: 3}
@@ -6468,7 +6468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5892638272304107562}
   - component: {fileID: 8321390778785083625}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PinImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6912,7 +6912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 894962382874867695}
   - component: {fileID: 2782605578060226764}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PinImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7501,7 +7501,7 @@ GameObject:
   - component: {fileID: 6933001468306940152}
   m_Layer: 11
   m_Name: Pin
-  m_TagString: Untagged
+  m_TagString: Pin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7661,7 +7661,7 @@ GameObject:
   - component: {fileID: 6933001468441672424}
   m_Layer: 11
   m_Name: Pin (2)
-  m_TagString: Untagged
+  m_TagString: Pin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7776,7 +7776,7 @@ GameObject:
   - component: {fileID: 6933001468583642226}
   m_Layer: 11
   m_Name: Pin (1)
-  m_TagString: Untagged
+  m_TagString: Pin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7805,7 +7805,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.98, y: 0.98}
   m_EdgeRadius: 0
 --- !u!4 &6933001468654349195
 Transform:
@@ -7832,9 +7832,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6933001468654349195}
   - component: {fileID: 6933001468654349194}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PinCollider
-  m_TagString: Untagged
+  m_TagString: Pin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7863,7 +7863,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.98, y: 0.98}
   m_EdgeRadius: 0
 --- !u!4 &6933001468830075058
 Transform:
@@ -7890,9 +7890,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6933001468830075058}
   - component: {fileID: 6933001468830075057}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PinCollider
-  m_TagString: Untagged
+  m_TagString: Pin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8029,7 +8029,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.98, y: 0.98}
   m_EdgeRadius: 0
 --- !u!4 &6933001469059179953
 Transform:
@@ -8056,9 +8056,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6933001469059179953}
   - component: {fileID: 6933001469059179952}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PinCollider
-  m_TagString: Untagged
+  m_TagString: Pin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8330,7 +8330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 207375201116839721}
   - component: {fileID: 3447900876975270339}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PinImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}

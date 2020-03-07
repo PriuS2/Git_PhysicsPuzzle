@@ -104,16 +104,17 @@ public class InputSystem : MonoBehaviour
         var rayHit = Physics2D.Raycast(ray.origin, ray.direction);
         if (rayHit)
         {
-            Debug.Log(rayHit.transform.name);
-            
-            if (rayHit.transform.CompareTag("Block"))
+            Debug.Log("InputSystem / rayHit.name : "+rayHit.transform.name);
+
+            var hitTransform = rayHit.transform;
+            if (hitTransform.CompareTag("Block"))
             {
-                var block = rayHit.collider.gameObject.GetComponent<Block>();
+                var block = hitTransform.GetComponent<Block>();
                 block.ClickBlock();
             }
-            else if (rayHit.transform.CompareTag("UI"))
+            else if (hitTransform.CompareTag("UI"))
             {
-                var ui = rayHit.transform.GetComponent<PuzzleInterface>().content;
+                var ui = hitTransform.GetComponent<PuzzleInterface>().content;
                 if (ui == PuzzleInterface.UIContent.Pin)
                 {
                     PuzzleSystem.Current.Mod = PuzzleSystem.PuzzleMod.Pin;
@@ -135,6 +136,10 @@ public class InputSystem : MonoBehaviour
                 {
                     PuzzleSystem.Current.Mod = PuzzleSystem.PuzzleMod.Hand;
                 }
+            }
+            else if (hitTransform.CompareTag("Pin"))
+            {
+                hitTransform.GetComponent<Pin>().AttachPin();
             }
         }
     }

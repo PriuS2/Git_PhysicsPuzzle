@@ -11,7 +11,7 @@ public class Block : MonoBehaviour
     private FixedJoint2D _fixedJoint2D;
     public Pin[] pins;
 
-    [SerializeField] private List<Pin> attachedPins;
+    [SerializeField] private List<Transform> attachedPins;
 
     //public Pin[] pins;
     private Vector3 _initialPosition;
@@ -34,7 +34,7 @@ public class Block : MonoBehaviour
     private void Start()
     {
         _isUnfreeze = false;
-        attachedPins = new List<Pin>();
+        attachedPins = new List<Transform>();
         if (!GetComponent<FixedJoint2D>()) return;
         _fixedJoint2D = GetComponent<FixedJoint2D>();
         _fixedJoint2D.enabled = false;
@@ -81,13 +81,15 @@ public class Block : MonoBehaviour
         var isAttachedPin = false;
         for (int i = 0; i < count; i++)
         {
-            if (attachedPins[i] == pin)
+            if (attachedPins[i] == pin.transform)
             {
                 isAttachedPin = true;
             }
         }
-
-        attachedPins.Add(pin);
+        
+        if(!pin.IsAttached) attachedPins.Add(pin.transform);
+//        pin.AttachedNum = count;
+        
         if (!isAttachedPin)
         {
             _fixedJoint2D.enabled = true;
@@ -105,38 +107,53 @@ public class Block : MonoBehaviour
     public void DetachPin(Pin pin)
     {
         var count = attachedPins.Count;
-        for (int i = 0; i < attachedPins.Count; i++)
+//        for (int i = 0; i < count; i++)
+//        {
+//            if (attachedPins[i].transform == pin.transform)
+//            {
+//                Debug.Log("Block / DetachPin() "+pin.transform.name);
+//                attachedPins.Remove(pin);
+//            }
+//        }
+        attachedPins.Remove(pin.transform);
+        Debug.Log("fdsafdasfdas" +_isUnfreeze);
+        if(_isUnfreeze) Unfreeze();
+
+        count = attachedPins.Count;
+        if (count == 0)
         {
-            if (attachedPins[i] == pin)
-            {
-                attachedPins.Remove(pin);
-            }
+            _fixedJoint2D.enabled = false;
+        }
+        else if(count == 1)
+        {
+            attachedPins[0].GetComponent<Pin>().UpdateJoint();
         }
     }
 
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-//        if(other.gameObject.GetComponent<Block>())
-//            other.gameObject.GetComponent<Block>().Unfreeze();
-        //Unfreeze();
-        _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
-        _rigidbody2D.drag = 0;
-        _rigidbody2D.angularDrag = 0.5f;
+//        if (!_isUnfreeze)
+//        {
+//            
+//        }
+        Unfreeze();
         _isUnfreeze = true;
     }
 
 
-//    public void Unfreeze()
-//    {
-//        if (_isUnfreeze) return;
-//
-//        if (attachedPins.Count <= 1)
-//        {
-//            _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
-//            _isUnfreeze = true;
-//            _rigidbody2D.drag = 0;
-//            _rigidbody2D.angularDrag = 0.1f;
-//        }
-//    }
+    private void Unfreeze()
+    {
+        if (attachedPins.Count <= 1)
+        {
+            Debug.Log("Fewqfewfdsvxc");
+            _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+            _rigidbody2D.drag = 0;
+            _rigidbody2D.angularDrag = 0.1f;
+        }
+        for (int i = 0; i < pins.Length; i++)
+        {
+            pins[i].SetUnfreeze = true;
+        }
+    }
 }

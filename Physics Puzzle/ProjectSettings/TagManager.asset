@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Block
   - UI
+  - Pin
   layers:
   - Default
   - TransparentFX

@@ -20,7 +20,7 @@ public class Goal : MonoBehaviour
         if (distance < 0.5f)
         {
             var vel = other.GetComponent<Target>().Velocity;
-            Debug.Log(vel);
+//            Debug.Log(vel);
             if (vel <= 0.01f)
             {
                 PuzzleSystem.Current.StageClear();
