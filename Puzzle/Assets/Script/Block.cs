@@ -7,9 +7,12 @@ public class Block : MonoBehaviour
 {
 
     private Vector2 _initialPosition;
+    private Quaternion _initialQuaternion;
     
     private void Start()
     {
-        _initialPosition = transform.position;
+        var temp = transform;
+        _initialPosition = temp.position;
+        _initialQuaternion = temp.rotation;
     }
 }

@@ -2,21 +2,133 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94a345da-a413-4bc6-833d-13bae8dc9525" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-03.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-03.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-04.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-04.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-05.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-05.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-06.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-06.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-07.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-07.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-08.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-08.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-09.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-09.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-10.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-10.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-11.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-11.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-12.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-12.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-13.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-13.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-14.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-14.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-15.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-15.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-16.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-16.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-17.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-17.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-18.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-18.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-19.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-19.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-20.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-20.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-21.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-21.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-22.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-22.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-23.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-23.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-24.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-24.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-25.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-25.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-26.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-26.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-27.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-27.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-28.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-28.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-29.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-29.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-30.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-30.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-31.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-31.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-32.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-32.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-33.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-33.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-34.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-34.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-35.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-35.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-36.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-36.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-37.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-37.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-38.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-38.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-39.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-39.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-40.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-40.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-41.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-41.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-42.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-42.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-43.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-43.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-44.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-44.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-45.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-45.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-46.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-46.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-47.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-47.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-48.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-48.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-49.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-49.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-50.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/DM-CGS-50.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/license.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/CasualGameSounds/license.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/Image/sphere.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/Image/sphere.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/Script/Target.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/Script/Target.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/Script/TargetRound.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Puzzle/Assets/Script/TargetRound.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Physics Puzzle/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Physics Puzzle/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Physics Puzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Physics Puzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Goal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Goal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/InputSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Pin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Pin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/b72a34-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/b72a34-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/.idea/.idea.Puzzle/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/.idea/.idea.Puzzle/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/.idea/.idea.Puzzle/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/.idea/.idea.Puzzle/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/Assets/DefaultPhysicsMaterial.physicsMaterial2D" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/Assets/DefaultPhysicsMaterial.physicsMaterial2D" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/Assets/Script/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/Assets/Script/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/Library/StateCache/SceneView/b72a34-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/Library/StateCache/SceneView/b72a34-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puzzle/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/../Puzzle/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,6 +236,7 @@
       <workItem from="1583482805270" duration="9166000" />
       <workItem from="1583502423293" duration="9194000" />
       <workItem from="1583582748271" duration="4102000" />
+      <workItem from="1583655709812" duration="599000" />
     </task>
     <servers />
   </component>

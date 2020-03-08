@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\UnityProject\Git_PhysicsPuzzle\Puzzle" t="IncludeRecursive">
@@ -8,6 +8,8 @@
           <e p="Block.cs" t="Include" />
           <e p="GoalRotate.cs" t="Include" />
           <e p="InitializeScreen.cs" t="Include" />
+          <e p="Target.cs" t="Include" />
+          <e p="TargetRound.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
